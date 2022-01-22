@@ -1,0 +1,9 @@
+.posts {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 10px 10px;
+    margin-bottom: 15px;
+}
+.post {
+    padding-bottom: 8px;
+}

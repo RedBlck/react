@@ -1,0 +1,8 @@
+.users {
+    padding: 0 10px;
+    background: bisque;
+    min-width: 350px;
+}
+.user {
+    padding-bottom: 8px;
+}
