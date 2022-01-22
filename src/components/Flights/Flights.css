@@ -1,0 +1,14 @@
+.flight {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px 5px;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.flight img {
+    width: 150px;
+}
+.text {
+    width: 250px;
+}
