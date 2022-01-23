@@ -11,7 +11,7 @@ const Posts = () => {
     },[])
     return (
         <div className={'posts'}>
-            {posts.map(value => <Post userId={value.userId} id={value.id} title={value.title} body={value.body}/>)}
+            {posts.map(value => <Post userId={value.userId} key={value.id} title={value.title} body={value.body}/>)}
         </div>
     );
 };
