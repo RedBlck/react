@@ -11,7 +11,7 @@ const Flights = () => {
     }, []);
     return (
         <div>
-            {flights.map(value => <Flight name={value.mission_name} year={value.launch_year} img={value.links.mission_patch_small}/>)}
+            {flights.map(value => <Flight key={value.flight_number} name={value.mission_name} year={value.launch_year} img={value.links.mission_patch_small}/>)}
         </div>
     );
 };
