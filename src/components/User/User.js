@@ -1,10 +1,10 @@
 import React from 'react';
 
-const User = ({user: {id, name, email}, getUserId}) => {
+const User = ({user: {id, name}, getUserId}) => {
     return (
         <div>
-            {name}{email}
-            <button onClick={()=>getUserId(id)}>details</button>
+            <b>{id}</b> - {name}
+            <button onClick={()=>getUserId(id)}>GetDetails</button>
         </div>
     );
 };
