@@ -1,0 +1,10 @@
+.userDetails {
+    display: flex;
+    align-items: center;
+}
+.userDetails button {
+    border: none;
+    background: deepskyblue;
+    color: white;
+    padding: 10px;
+}
