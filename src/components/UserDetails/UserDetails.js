@@ -2,7 +2,7 @@ import React from 'react';
 
 import './UserDetails.css';
 
-const UserDetails = ({user:{id, name, username,email, address, phone, website, company}}) => {
+const UserDetails = ({user:{id, name, username,email, address, phone, website, company}, getPostId}) => {
     return (
         <div className={'userDetails'}>
             <div>
@@ -29,7 +29,7 @@ const UserDetails = ({user:{id, name, username,email, address, phone, website, c
                 </div>
             </div>
             <div>
-                <button onClick={}>Get posts</button>
+                <button onClick={()=>getPostId(id)}>Get posts</button>
             </div>
 
         </div>

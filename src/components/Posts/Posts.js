@@ -1,17 +1,12 @@
-import React, {useState} from 'react';
-import {postService} from "../../services/post.service";
-import Post from "../Post/Post";
+import React from 'react';
 
-const Posts = () => {
-    const [posts,setPosts] = useState([]);
-    const getPostId = (id) => {
-        postService.getById(id)
-            .then(value => setPosts(value));
-    }
+import './Posts.css';
 
+const Posts = ({id, title, body}) => {
     return (
-        <div>
-
+        <div className={'post'}>
+            <div><b>{id}</b> - {title}</div>
+            <div>{body}</div>
         </div>
     );
 };
